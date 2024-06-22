@@ -1,0 +1,52 @@
+.background {
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/BackGround.png?fileID=2800000&guid=b464ee8350ce3984aa31ea54d12d9236&type=3#BackGround");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.border {
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Frames_3.png?fileID=113947384412704010&guid=c3cbd015370c5294385a8d880c234850&type=3#Steampunk_UI_Frames_3_4");
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.topLeft {
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Frames_3.png?fileID=-595620182695351188&guid=c3cbd015370c5294385a8d880c234850&type=3#Steampunk_UI_Frames_3_5");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: auto;
+    min-height: 150px;
+    max-height: 250px;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.topRight {
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Frames_3.png?fileID=5654969685363657340&guid=c3cbd015370c5294385a8d880c234850&type=3#Steampunk_UI_Frames_3_6");
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: auto;
+    min-height: 150px;
+    max-height: 250px;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.bottomLeft {
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Frames_3.png?fileID=4864721600614679434&guid=c3cbd015370c5294385a8d880c234850&type=3#Steampunk_UI_Frames_3_7");
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10%;
+    height: auto;
+    min-height: 237px;
+    max-height: 200px;
+    min-width: 237px;
+    max-width: 346px;
+}
