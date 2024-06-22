@@ -50,3 +50,39 @@
     min-width: 237px;
     max-width: 346px;
 }
+
+.bottomMiddle {
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Alternative_Colors_4.png?fileID=-8831441479830076655&guid=fc2c96f1421fbe54e82922ae89afef74&type=3#Steampunk_UI_Alternative_Colors_4_6");
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    width: 8%;
+    min-width: 150px;
+    max-width: 150px;
+    min-height: 50px;
+}
+
+.bottomRight {
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Buttons_1.png?fileID=-4374215236208778123&guid=9291b39306d4ce640bf255c16c6ddf5b&type=3#Steampunk_UI_Buttons_1_15");
+    position: absolute;
+    width: 5%;
+}
+
+.emailTitle {
+    top: auto;
+    position: absolute;
+    right: auto;
+    -unity-text-align: upper-center;
+    margin-top: 25%;
+    margin-left: 10%;
+    justify-content: center;
+    align-self: center;
+    -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/BebasNeue/BebasNeue.ttf?fileID=12800000&guid=843d03ef8be16da4d96629804d86d7f3&type=3#BebasNeue");
+    -unity-font-style: bold;
+}
+
+.unity-text-element {
+}
+
+.unity-label {
+}
