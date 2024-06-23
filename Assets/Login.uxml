@@ -1,12 +1,21 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/style.uss?fileID=7433441132597879392&amp;guid=2267f8cebd6532a4f87d7436c9632e45&amp;type=3#style" />
-    <ui:VisualElement name="background" class="background" style="flex-grow: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-        <ui:VisualElement name="border" class="border" style="flex-grow: 1; display: flex; flex-direction: column; align-items: center;">
-            <ui:VisualElement name="topLeft" class="topLeft" style="flex-grow: 1;" />
-            <ui:VisualElement name="bottomLeft" class="bottomLeft" style="flex-grow: 1; left: 3.5%; bottom: 4%;" />
-            <ui:VisualElement name="topRight" class="topRight" style="flex-grow: 1;" />
-            <ui:VisualElement name="bottomMiddle" class="bottomMiddle" style="flex-grow: 1; bottom: 7.3%;" />
-            <ui:VisualElement name="bottomRight" class="bottomRight" style="flex-grow: 1;" />
+    <ui:VisualElement name="background" class="background">
+        <ui:VisualElement name="border" class="border">
+            <ui:VisualElement name="topLeft" class="topLeft" />
+            <ui:VisualElement name="bottomLeft" class="bottomLeft" />
+            <ui:VisualElement name="topRight" class="topRight" />
+            <ui:VisualElement name="bottomMiddle" class="bottomMiddle" />
+            <ui:VisualElement name="bottomRight" class="bottomRight" />
+        </ui:VisualElement>
+        <ui:VisualElement name="inputContainer" class="inputContainer">
+            <ui:Label name="emailTitle" text="EMAIL" class="emailTitle" />
+            <ui:TextField name="InputEmailText" value="Enter text..." class="InputEmailText"  />
+            <ui:Label name="InfoHintEmail" text="weiwandaixu" class="InfoHintEmail" />
+            <ui:Label name="passwordTitle" text="PASSWORD" class="passwordTitle" />
+            <ui:TextField name="inputPasswordText" value="Enter text..." class="inputPasswordText" />
+            <ui:Label name="infoHintPassword" text="weiwandaixu" class="InfoHintEmail infoHintPassword" />
+            <ui:Button text="LOGIN" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buttonSubmit" class="buttonSubmit" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

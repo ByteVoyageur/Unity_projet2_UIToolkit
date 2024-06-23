@@ -19,10 +19,6 @@
     left: 0;
     width: 40%;
     height: 17%;
-    min-height: auto;
-    max-height: none;
-    min-width: auto;
-    max-width: none;
 }
 
 .topRight {
@@ -32,10 +28,6 @@
     right: 0;
     width: 40%;
     height: 17%;
-    min-height: auto;
-    max-height: none;
-    min-width: auto;
-    max-width: none;
 }
 
 .bottomLeft {
@@ -63,5 +55,58 @@
     right: 1.6%;
     width: 28%;
     height: 7%;
-    rotate: -62deg;
+    rotate: -49deg;
+}
+
+.inputContainer {
+    position: absolute;
+    left: 10%;
+    top: 17%;
+    right: 10%;
+    bottom: 24%;
+}
+
+.emailTitle {
+    font-size: 314%;
+    -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/Arvo/Arvo.ttf?fileID=12800000&guid=e5c356a4b721b024daa3ce4df25a2a24&type=3#Arvo");
+    color: rgb(189, 110, 23);
+    -unity-text-align: upper-center;
+}
+
+.passwordTitle {
+    font-size: 314%;
+    -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/Arvo/Arvo.ttf?fileID=12800000&guid=e5c356a4b721b024daa3ce4df25a2a24&type=3#Arvo");
+    color: rgb(189, 110, 23);
+    -unity-text-align: upper-center;
+}
+
+.InputEmailText {
+    width: 100%;
+    font-size: 100%;
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Buttons_3.png?fileID=-7632156641727129564&guid=c164cff5d531b924cab23980fd978595&type=3#Steampunk_UI_Buttons_3_0");
+}
+
+.inputPasswordText {
+    width: 100%;
+    font-size: 100%;
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Buttons_3.png?fileID=-7632156641727129564&guid=c164cff5d531b924cab23980fd978595&type=3#Steampunk_UI_Buttons_3_0");
+}
+
+.InfoHintEmail {
+    font-size: 90%;
+}
+
+.infoHintPassword {
+    font-size: 90%;
+}
+
+.buttonSubmit {
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+    width: 41%;
+    height: 67px;
+    font-size: 268%;
+    color: rgb(192, 123, 19);
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Alternative_Colors_3.png?fileID=-3566595149302162515&guid=0bfe7a2d4a8de314bbf0f670d78a6cd2&type=3#Steampunk_UI_Alternative_Colors_3_2");
 }
