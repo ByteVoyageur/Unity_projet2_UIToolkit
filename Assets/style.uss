@@ -71,6 +71,8 @@
     -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/Arvo/Arvo.ttf?fileID=12800000&guid=e5c356a4b721b024daa3ce4df25a2a24&type=3#Arvo");
     color: rgb(189, 110, 23);
     -unity-text-align: upper-center;
+    width: auto;
+    height: auto;
 }
 
 .passwordTitle {
@@ -78,26 +80,36 @@
     -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/Arvo/Arvo.ttf?fileID=12800000&guid=e5c356a4b721b024daa3ce4df25a2a24&type=3#Arvo");
     color: rgb(189, 110, 23);
     -unity-text-align: upper-center;
+    width: auto;
+    height: auto;
 }
 
 .InputEmailText {
     width: 100%;
-    font-size: 100%;
+    font-size: 558%;
     background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Buttons_3.png?fileID=-7632156641727129564&guid=c164cff5d531b924cab23980fd978595&type=3#Steampunk_UI_Buttons_3_0");
+    margin-bottom: 34px;
 }
 
 .inputPasswordText {
     width: 100%;
-    font-size: 100%;
+    font-size: 558%;
     background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Buttons_3.png?fileID=-7632156641727129564&guid=c164cff5d531b924cab23980fd978595&type=3#Steampunk_UI_Buttons_3_0");
+    margin-bottom: 34px;
 }
 
 .InfoHintEmail {
     font-size: 90%;
+    margin-bottom: 1%;
+    margin-top: 0;
+    display: none;
 }
 
 .infoHintPassword {
     font-size: 90%;
+    margin-bottom: 1%;
+    margin-top: 0;
+    display: none;
 }
 
 .buttonSubmit {
@@ -106,7 +118,10 @@
     bottom: 25%;
     width: 41%;
     height: 67px;
-    font-size: 268%;
+    font-size: 344%;
     color: rgb(192, 123, 19);
     background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Alternative_Colors_3.png?fileID=-3566595149302162515&guid=0bfe7a2d4a8de314bbf0f670d78a6cd2&type=3#Steampunk_UI_Alternative_Colors_3_2");
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
 }
