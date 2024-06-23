@@ -12,7 +12,9 @@
     <ui:VisualElement name="userInputContainer" class="userInputContainer" style="flex-grow: 1;">
         <ui:VisualElement name="emailContainer" class="emailContainer" style="flex-grow: 1;">
             <ui:Label tabindex="-1" text="EMAIL" parse-escape-sequences="true" display-tooltip-when-elided="true" name="emailLabel" class="emailLabel" />
-            <ui:VisualElement name="emailTextField" class="emailTextField" style="flex-grow: 1;" />
+            <ui:VisualElement name="emailTextField" class="emailTextField" style="flex-grow: 1;">
+                <ui:TextField picking-mode="Ignore" label="Text Field" value="filler text" name="emailText" class="emailText" />
+            </ui:VisualElement>
             <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="emailHintLabel" class="emailHintLabel" />
         </ui:VisualElement>
         <ui:VisualElement name="passwordContainer" class="emailContainer passwordContainer" style="flex-grow: 1;">
