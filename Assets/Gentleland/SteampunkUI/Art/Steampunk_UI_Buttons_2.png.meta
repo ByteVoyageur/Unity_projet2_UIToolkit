@@ -21,7 +21,7 @@ TextureImporter:
       213: 2191966642830837830
     second: Steampunk_UI_Buttons_2_1
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -38,11 +38,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -81,6 +82,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -92,6 +95,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -104,6 +108,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -116,6 +121,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -128,6 +134,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -137,13 +144,13 @@ TextureImporter:
       name: Steampunk_UI_Buttons_2_0
       rect:
         serializedVersion: 2
-        x: 44
+        x: 43
         y: 818
-        width: 346
+        width: 347
         height: 219
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 84, y: 52, z: 102, w: 36}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -159,12 +166,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 442
-        y: 816
+        y: 815
         width: 346
         height: 219
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 84, y: 52, z: 102, w: 36}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -184,8 +191,8 @@ TextureImporter:
         width: 346
         height: 219
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 84, y: 52, z: 102, w: 36}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -200,13 +207,13 @@ TextureImporter:
       name: Steampunk_UI_Buttons_2_3
       rect:
         serializedVersion: 2
-        x: 61
-        y: 449
+        x: 62
+        y: 450
         width: 688
         height: 271
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 80, y: 80, z: 90, w: 50}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -222,12 +229,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 839
-        y: 443
-        width: 688
-        height: 271
+        y: 444
+        width: 689
+        height: 270
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 80, y: 80, z: 90, w: 50}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -244,11 +251,11 @@ TextureImporter:
         serializedVersion: 2
         x: 59
         y: 98
-        width: 688
+        width: 689
         height: 271
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 80, y: 80, z: 90, w: 50}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -271,14 +278,13 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Steampunk_UI_Buttons_2_0: 8799829423701521183
-      Steampunk_UI_Buttons_2_2: -6613772995676377648
-      Steampunk_UI_Buttons_2_5: -6513349321188212269
-      Steampunk_UI_Buttons_2_4: 6912372366057910295
-      Steampunk_UI_Buttons_2_3: -1388602495020635306
       Steampunk_UI_Buttons_2_1: 2191966642830837830
-  spritePackingTag: 
+      Steampunk_UI_Buttons_2_2: -6613772995676377648
+      Steampunk_UI_Buttons_2_3: -1388602495020635306
+      Steampunk_UI_Buttons_2_4: 6912372366057910295
+      Steampunk_UI_Buttons_2_5: -6513349321188212269
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

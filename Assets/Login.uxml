@@ -1,13 +1,25 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/style.uss?fileID=7433441132597879392&amp;guid=2267f8cebd6532a4f87d7436c9632e45&amp;type=3#style" />
     <ui:VisualElement name="background" class="background" style="flex-grow: 1;">
-        <ui:VisualElement name="border" class="border" style="flex-grow: 1;">
+        <ui:VisualElement name="border" class="border" style="flex-grow: 1; height: 807px;">
             <ui:VisualElement name="topLeft" class="topLeft" style="flex-grow: 1;" />
-            <ui:VisualElement name="bottomLeft" class="bottomLeft" style="flex-grow: 1;" />
+            <ui:VisualElement name="bottomLeft" class="bottomLeft" style="flex-grow: 1; left: 3.5%; bottom: 4%;" />
             <ui:VisualElement name="topRight" class="topRight" style="flex-grow: 1;" />
-            <ui:VisualElement name="bottomMiddle" class="bottomMiddle" style="flex-grow: 1;" />
+            <ui:VisualElement name="bottomMiddle" class="bottomMiddle" style="flex-grow: 1; bottom: 7.3%;" />
             <ui:VisualElement name="bottomRight" class="bottomRight" style="flex-grow: 1;" />
         </ui:VisualElement>
-        <ui:Label tabindex="-1" text="EMAIL" parse-escape-sequences="true" display-tooltip-when-elided="true" name="emailTitle" class="emailTitle" style="-unity-text-align: upper-left;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="userInputContainer" class="userInputContainer" style="flex-grow: 1;">
+        <ui:VisualElement name="emailContainer" class="emailContainer" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="EMAIL" parse-escape-sequences="true" display-tooltip-when-elided="true" name="emailLabel" class="emailLabel" />
+            <ui:VisualElement name="emailTextField" class="emailTextField" style="flex-grow: 1;" />
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="emailHintLabel" class="emailHintLabel" />
+        </ui:VisualElement>
+        <ui:VisualElement name="passwordContainer" class="emailContainer passwordContainer" style="flex-grow: 1;">
+            <ui:Label tabindex="-1" text="PASSWORD" parse-escape-sequences="true" display-tooltip-when-elided="true" name="passwordLabel" class="emailLabel passwordLabel" />
+            <ui:VisualElement name="passwordTextField" class="emailTextField passwordTextField" style="flex-grow: 1;" />
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="passwordHintLabel" class="passwordHintLabel" />
+        </ui:VisualElement>
+        <ui:Button text="LOGIN" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buttonSubmit" class="buttonSubmit" style="background-image: url(&quot;project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Buttons_2.png?fileID=-6513349321188212269&amp;guid=f85c0b0d6e5acd64185eafcda5d6cba8&amp;type=3#Steampunk_UI_Buttons_2_5&quot;);" />
     </ui:VisualElement>
 </ui:UXML>
