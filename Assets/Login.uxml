@@ -13,9 +13,9 @@
                     <ui:TextField name="InputEmailText" value="Enter text..." class="InputEmailText" />
                     <ui:Label name="InfoHintEmail" class="InfoHintEmail" />
                     <ui:Label name="passwordTitle" text="PASSWORD" class="passwordTitle" style="-unity-font-definition: initial;" />
-                    <ui:TextField name="inputPasswordText" value="Enter text..." class="inputPasswordText" />
+                    <ui:TextField name="inputPasswordText" value="Enter text..." class="inputPasswordText" style="font-size: 63%; -unity-font-style: italic;" />
                     <ui:Label name="infoHintPassword" class="infoHintPassword" />
-                    <ui:Button text="LOGIN" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buttonSubmit" class="buttonSubmit" style="margin-top: 0;" />
+                    <ui:Button text="LOGIN" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buttonSubmit" class="buttonSubmit" style="margin-top: 0; -unity-font-definition: initial; -unity-font: url(&quot;project://database/Assets/Gentleland/SteampunkUI/Fonts/Arvo/Arvo.ttf?fileID=12800000&amp;guid=e5c356a4b721b024daa3ce4df25a2a24&amp;type=3#Arvo&quot;);" />
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>

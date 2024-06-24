@@ -14,6 +14,11 @@
     padding-right: 15%;
     padding-bottom: 82%;
     padding-left: 15%;
+    left: 1px;
+    width: 98%;
+    height: 26%;
+    max-width: none;
+    position: relative;
 }
 
 .border {
@@ -88,7 +93,7 @@
 
 .InputEmailText {
     width: 80%;
-    font-size: 230%;
+    font-size: 254%;
     background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Buttons_3.png?fileID=-7632156641727129564&guid=c164cff5d531b924cab23980fd978595&type=3#Steampunk_UI_Buttons_3_0");
     margin-bottom: 36px;
     height: 7%;
