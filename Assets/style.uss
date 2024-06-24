@@ -5,6 +5,17 @@
     position: absolute;
 }
 
+.frameLogin {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 48%;
+    padding-right: 15%;
+    padding-bottom: 82%;
+    padding-left: 15%;
+}
+
 .border {
     background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Frames_3.png?fileID=113947384412704010&guid=c3cbd015370c5294385a8d880c234850&type=3#Steampunk_UI_Frames_3_4");
     width: 100%;
@@ -17,8 +28,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 40%;
-    height: 17%;
+    width: 44%;
+    height: 21%;
 }
 
 .topRight {
@@ -26,24 +37,24 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 40%;
-    height: 17%;
+    width: 44%;
+    height: 21%;
 }
 
 .bottomLeft {
     background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Frames_3.png?fileID=4864721600614679434&guid=c3cbd015370c5294385a8d880c234850&type=3#Steampunk_UI_Frames_3_7");
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 45%;
-    height: 30%;
+    bottom: 3%;
+    left: 2%;
+    width: 34%;
+    height: 25%;
 }
 
 .bottomMiddle {
     background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Alternative_Colors_4.png?fileID=-8831441479830076655&guid=fc2c96f1421fbe54e82922ae89afef74&type=3#Steampunk_UI_Alternative_Colors_4_6");
     position: absolute;
     bottom: 7%;
-    left: 50%;
+    left: 53%;
     width: 28%;
     height: 7%;
 }
@@ -51,77 +62,122 @@
 .bottomRight {
     background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Alternative_Colors_4.png?fileID=-8831441479830076655&guid=fc2c96f1421fbe54e82922ae89afef74&type=3#Steampunk_UI_Alternative_Colors_4_6");
     position: absolute;
-    bottom: 12%;
-    right: 1.6%;
-    width: 28%;
-    height: 7%;
+    bottom: 11%;
+    right: 0;
+    width: 18%;
+    height: 5%;
     rotate: -49deg;
-}
-
-.inputContainer {
-    position: absolute;
-    left: 10%;
-    top: 17%;
-    right: 10%;
-    bottom: 24%;
+    left: 79%;
 }
 
 .emailTitle {
-    font-size: 314%;
+    font-size: 432%;
     -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/Arvo/Arvo.ttf?fileID=12800000&guid=e5c356a4b721b024daa3ce4df25a2a24&type=3#Arvo");
-    color: rgb(189, 110, 23);
+    color: rgb(176, 103, 23);
     -unity-text-align: upper-center;
-    width: auto;
-    height: auto;
-}
-
-.passwordTitle {
-    font-size: 314%;
-    -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/Arvo/Arvo.ttf?fileID=12800000&guid=e5c356a4b721b024daa3ce4df25a2a24&type=3#Arvo");
-    color: rgb(189, 110, 23);
-    -unity-text-align: upper-center;
-    width: auto;
-    height: auto;
+    width: 98%;
+    height: 10%;
+    top: 18%;
+    position: relative;
+    -unity-font-definition: initial;
+    right: 0;
+    bottom: 30%;
+    left: 15px;
+    -unity-font-style: bold;
 }
 
 .InputEmailText {
-    width: 100%;
-    font-size: 558%;
+    width: 80%;
+    font-size: 230%;
     background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Buttons_3.png?fileID=-7632156641727129564&guid=c164cff5d531b924cab23980fd978595&type=3#Steampunk_UI_Buttons_3_0");
-    margin-bottom: 34px;
-}
-
-.inputPasswordText {
-    width: 100%;
-    font-size: 558%;
-    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Buttons_3.png?fileID=-7632156641727129564&guid=c164cff5d531b924cab23980fd978595&type=3#Steampunk_UI_Buttons_3_0");
-    margin-bottom: 34px;
+    margin-bottom: 36px;
+    height: 7%;
+    left: 10%;
+    top: 15%;
+    background-color: rgba(178, 120, 58, 0);
+    -unity-font-definition: initial;
+    -unity-font: url("project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=f173043db5cbc7b4788578cf1b56e460&type=3#NotInter-Regular");
+    -unity-font-style: italic;
+    text-shadow: 0 0 0 rgba(111, 60, 60, 0);
+    -unity-text-outline-color: rgba(0, 0, 0, 0.2);
 }
 
 .InfoHintEmail {
     font-size: 90%;
     margin-bottom: 1%;
     margin-top: 0;
-    display: none;
+    display: flex;
+    width: 80%;
+    height: 5%;
+    position: absolute;
+    bottom: auto;
+    top: 35%;
+    left: 10%;
+}
+
+.passwordTitle {
+    font-size: 446%;
+    -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/Arvo/Arvo.ttf?fileID=12800000&guid=e5c356a4b721b024daa3ce4df25a2a24&type=3#Arvo");
+    color: rgb(189, 110, 23);
+    -unity-text-align: upper-center;
+    width: 31%;
+    height: auto;
+    position: absolute;
+    top: 42%;
+    left: 35%;
+    -unity-font-style: bold;
+    max-width: 100%;
+    max-height: 15%;
+    min-width: 30%;
+    min-height: 40px;
+}
+
+.inputPasswordText {
+    width: 80%;
+    font-size: 558%;
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Buttons_3.png?fileID=-7632156641727129564&guid=c164cff5d531b924cab23980fd978595&type=3#Steampunk_UI_Buttons_3_0");
+    margin-bottom: 34px;
+    height: 7%;
+    -unity-text-align: upper-left;
+    left: 10%;
+    bottom: 40%;
+    position: absolute;
 }
 
 .infoHintPassword {
     font-size: 90%;
     margin-bottom: 1%;
     margin-top: 0;
-    display: none;
+    display: flex;
+    bottom: 37%;
+    left: 10%;
+    width: 80%;
+    position: absolute;
+    height: 4%;
 }
 
 .buttonSubmit {
     position: absolute;
-    left: 50%;
-    bottom: 25%;
-    width: 41%;
-    height: 67px;
-    font-size: 344%;
-    color: rgb(192, 123, 19);
+    left: 44%;
+    bottom: 22%;
+    width: 35%;
+    height: 8%;
+    font-size: 410%;
+    color: rgb(221, 147, 35);
     background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Alternative_Colors_3.png?fileID=-3566595149302162515&guid=0bfe7a2d4a8de314bbf0f670d78a6cd2&type=3#Steampunk_UI_Alternative_Colors_3_2");
     margin-top: 0;
-    padding-top: 0;
+    padding-top: 4px;
     display: flex;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0.05);
+    border-right-color: rgba(0, 0, 0, 0.05);
+    border-top-color: rgba(0, 0, 0, 0.05);
+    border-bottom-color: rgba(0, 0, 0, 0.05);
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
 }
