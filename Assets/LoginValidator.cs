@@ -7,13 +7,14 @@ public class LoginValidator : MonoBehaviour
     private TextField passwordField;
     private Label emailErrorMessage;
     private Label passwordErrorMessage;
+    private const string placeholderText = "Enter text...";
 
     void OnEnable()
     {
         var root = GetComponent<UIDocument>().rootVisualElement;
 
-        emailField = root.Q<TextField>("InputEmailText");
-        passwordField = root.Q<TextField>("inputPasswordText");
+        emailField = root.Q<TextField>("emailInput");
+        passwordField = root.Q<TextField>("passwordInput");
         emailErrorMessage = root.Q<Label>("InfoHintEmail");
         passwordErrorMessage = root.Q<Label>("infoHintPassword");
 
@@ -31,13 +32,13 @@ public class LoginValidator : MonoBehaviour
 
         bool isValid = true;
 
-        if (string.IsNullOrEmpty(emailField.value))
+        if (string.IsNullOrEmpty(emailField.value) || emailField.value == placeholderText)
         {
             ShowErrorMessage(emailErrorMessage, "Please enter email.", Color.red);
             isValid = false;
         }
 
-        if (string.IsNullOrEmpty(passwordField.value))
+        if (string.IsNullOrEmpty(passwordField.value) || passwordField.value == placeholderText)
         {
             ShowErrorMessage(passwordErrorMessage, "Please enter password.", Color.red);
             isValid = false;

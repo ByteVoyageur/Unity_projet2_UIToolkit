@@ -105,8 +105,23 @@
     border-bottom-left-radius: 23px;
 }
 
+.emailInput {
+    -unity-background-image-tint-color: rgb(6, 6, 6);
+    background-color: rgba(186, 125, 32, 0);
+    width: 88%;
+    height: 51%;
+    position: absolute;
+    left: 3%;
+    top: 23%;
+    -unity-font-definition: initial;
+    -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/Arvo/Arvo.ttf?fileID=12800000&guid=e5c356a4b721b024daa3ce4df25a2a24&type=3#Arvo");
+    -unity-font-style: italic;
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Dialogue_3.png?fileID=5185045578303202313&guid=44a8b76b70d48db4aa2dcac3eb64eb88&type=3#Steampunk_UI_Dialogue_3_3");
+    font-size: 320%;
+}
+
 .InfoHintEmail {
-    font-size: 90%;
+    font-size: 332%;
     margin-bottom: 1%;
     margin-top: 0;
     display: flex;
@@ -115,7 +130,10 @@
     position: absolute;
     bottom: auto;
     top: 35%;
-    left: 10%;
+    left: 11%;
+    color: rgb(239, 234, 234);
+    -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/Arvo/Arvo.ttf?fileID=12800000&guid=e5c356a4b721b024daa3ce4df25a2a24&type=3#Arvo");
+    -unity-font-definition: initial;
 }
 
 .passwordTitle {
@@ -148,26 +166,35 @@
     border-top-right-radius: 23px;
     border-bottom-right-radius: 23px;
     border-bottom-left-radius: 23px;
+    -unity-slice-left: 0;
+    -unity-font-style: bold-and-italic;
+}
+
+.passwordInput {
 }
 
 .infoHintPassword {
-    font-size: 90%;
+    font-size: 332%;
     margin-bottom: 1%;
     margin-top: 0;
     display: flex;
-    bottom: 37%;
-    left: 10%;
     width: 80%;
+    height: 5%;
     position: absolute;
-    height: 4%;
+    bottom: auto;
+    top: 57%;
+    left: 11%;
+    color: rgb(239, 234, 234);
+    -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/Arvo/Arvo.ttf?fileID=12800000&guid=e5c356a4b721b024daa3ce4df25a2a24&type=3#Arvo");
+    -unity-font-definition: initial;
 }
 
 .buttonSubmit {
     position: absolute;
     left: 44%;
     bottom: 22%;
-    width: 35%;
-    height: 8%;
+    width: 40%;
+    height: 11%;
     font-size: 410%;
     color: rgb(221, 147, 35);
     background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Alternative_Colors_3.png?fileID=-3566595149302162515&guid=0bfe7a2d4a8de314bbf0f670d78a6cd2&type=3#Steampunk_UI_Alternative_Colors_3_2");
@@ -186,4 +213,6 @@
     padding-right: 4px;
     padding-bottom: 4px;
     padding-left: 4px;
+    -unity-font-definition: initial;
+    -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/Arvo/Arvo.ttf?fileID=12800000&guid=e5c356a4b721b024daa3ce4df25a2a24&type=3#Arvo");
 }

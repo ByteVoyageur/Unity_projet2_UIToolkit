@@ -10,11 +10,15 @@
                 <ui:VisualElement name="bottomRight" class="bottomRight" />
                 <ui:VisualElement name="inputContainer" style="flex-grow: 1;">
                     <ui:Label name="emailTitle" text="EMAIL" class="emailTitle" />
-                    <ui:VisualElement name="emailBorder" class="emailBorder" />
-                    <ui:Label name="InfoHintEmail" class="InfoHintEmail" />
+                    <ui:VisualElement name="emailBorder" class="emailBorder">
+                        <ui:TextField picking-mode="Ignore" value="Enter text..." name="emailInput" class="emailInput" />
+                    </ui:VisualElement>
+                    <ui:Label name="InfoHintEmail" text="This is a hint for email" class="InfoHintEmail" />
                     <ui:Label name="passwordTitle" text="PASSWORD" class="passwordTitle" style="-unity-font-definition: initial;" />
-                    <ui:VisualElement name="passwordBorder" class="passwordBorder" style="flex-grow: 1;" />
-                    <ui:Label name="infoHintPassword" class="infoHintPassword" />
+                    <ui:VisualElement name="passwordBorder" class="passwordBorder" style="flex-grow: 1;">
+                        <ui:TextField picking-mode="Ignore" value="Enter text..." name="passwordInput" class="emailInput passwordInput" />
+                    </ui:VisualElement>
+                    <ui:Label name="infoHintPassword" text="This is a hint For password" class="infoHintPassword" />
                     <ui:Button text="LOGIN" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buttonSubmit" class="buttonSubmit" style="margin-top: 0; -unity-font-definition: initial; -unity-font: url(&quot;project://database/Assets/Gentleland/SteampunkUI/Fonts/Arvo/Arvo.ttf?fileID=12800000&amp;guid=e5c356a4b721b024daa3ce4df25a2a24&amp;type=3#Arvo&quot;);" />
                 </ui:VisualElement>
             </ui:VisualElement>
