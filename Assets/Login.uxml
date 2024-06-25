@@ -1,7 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/style.uss?fileID=7433441132597879392&amp;guid=2267f8cebd6532a4f87d7436c9632e45&amp;type=3#style" />
     <ui:VisualElement name="background" class="background">
-        <ui:VisualElement name="frameLogin" class="frameLogin" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; width: 95%;">
+        <ui:VisualElement name="frameLogin" class="frameLogin">
             <ui:VisualElement name="border" class="border">
                 <ui:VisualElement name="topLeft" class="topLeft" />
                 <ui:VisualElement name="bottomLeft" class="bottomLeft" />
