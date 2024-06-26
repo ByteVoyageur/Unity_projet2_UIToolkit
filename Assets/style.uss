@@ -108,11 +108,11 @@
 .emailInput {
     -unity-background-image-tint-color: rgb(6, 6, 6);
     background-color: rgba(186, 125, 32, 0);
-    width: 88%;
-    height: 51%;
+    width: 100%;
+    height: 100%;
     position: absolute;
     left: 3%;
-    top: 23%;
+    top: 0;
     -unity-font-definition: initial;
     -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/Arvo/Arvo.ttf?fileID=12800000&guid=e5c356a4b721b024daa3ce4df25a2a24&type=3#Arvo");
     -unity-font-style: italic;
@@ -192,7 +192,7 @@
     height: 5%;
     position: absolute;
     bottom: auto;
-    top: 57%;
+    top: 59%;
     left: 11%;
     color: rgb(239, 234, 234);
     -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/Arvo/Arvo.ttf?fileID=12800000&guid=e5c356a4b721b024daa3ce4df25a2a24&type=3#Arvo");
@@ -233,6 +233,9 @@
     border-right-color: rgba(186, 125, 32, 0);
     border-top-color: rgba(186, 125, 32, 0);
     border-bottom-color: rgba(186, 125, 32, 0);
+    width: 100%;
+    height: 100%;
+    font-size: 95%;
 }
 
 .passwordInput > .unity-base-field__input {
