@@ -26,7 +26,7 @@
         <ui:VisualElement name="welcomeScreen" class="welcomeScreen">
             <ui:Label name="welcomeMessage" text="Welcome to the App!" class="welcomeMessage" />
             <ui:Button text="Join the room" parse-escape-sequences="true" display-tooltip-when-elided="true" name="joinRoom" class="joinRoom" />
-            <ui:ListView class="listView" />
+            <ui:ListView name="listView" class="listView" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

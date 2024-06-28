@@ -287,4 +287,11 @@
     height: 50%;
     top: 27%;
     left: 11%;
+    display: flex;
+}
+
+.listViewItem {
+    color: white;
+    padding: 5px;
+    margin: 2px 0;
 }
