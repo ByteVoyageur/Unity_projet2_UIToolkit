@@ -12,14 +12,15 @@
 .frameLogin {
     flex-grow: 1;
     max-width: 1185px;
-    max-height: 1728px;
+    max-height: 1709px;
     min-width: 726px;
     min-height: 1033px;
-    width: 90%;
-    height: 75%;
+    width: 94%;
+    height: 64%;
     margin-top: 0;
     margin-bottom: 5%;
     position: absolute;
+    display: flex;
 }
 
 .border {
@@ -125,6 +126,7 @@
     background-image: none;
     font-size: 320%;
     color: rgb(188, 174, 174);
+    display: flex;
 }
 
 .InfoHintEmail {
@@ -250,4 +252,39 @@
     border-right-color: rgba(186, 125, 32, 0);
     border-top-color: rgba(186, 125, 32, 0);
     border-bottom-color: rgba(186, 125, 32, 0);
+}
+
+.welcomeScreen {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    display: none;
+}
+
+.welcomeMessage {
+    width: 100%;
+    height: 10%;
+    color: rgb(55, 215, 62);
+    position: absolute;
+    top: 9%;
+    right: 0;
+    left: 0;
+    font-size: 50px;
+    -unity-text-align: upper-center;
+}
+
+.joinRoom {
+    top: 23%;
+    width: 30%;
+    left: 33%;
+    height: 6%;
+    font-size: 40px;
+    -unity-font-style: bold;
+}
+
+.listView {
+    width: 80%;
+    height: 50%;
+    top: 27%;
+    left: 11%;
 }

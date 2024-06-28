@@ -13,7 +13,8 @@ public class LoginValidator : MonoBehaviour
     private Label emailErrorMessage;
     private Label passwordErrorMessage;
     private const string placeholderText = "Enter text...";  // Set placeholder text
-    private VisualElement loginFrame; // use this to dispear the frame login after login successful
+    private VisualElement loginFrame; // use this to disappear the frame login after login successful
+    private VisualElement welcomeScreen; // use this to show the welcome screen after login successful
 
     void Awake()
     {
@@ -43,6 +44,7 @@ public class LoginValidator : MonoBehaviour
         passwordField.RegisterCallback<BlurEvent>(OnPasswordFieldBlur);
 
         loginFrame = root.Q<VisualElement>("frameLogin");
+        welcomeScreen = root.Q<VisualElement>("welcomeScreen"); // Initialize the welcome screen
     }
 
     private void OnEmailFieldFocus(FocusInEvent evt)
@@ -113,7 +115,8 @@ public class LoginValidator : MonoBehaviour
             ShowErrorMessage(passwordErrorMessage, "Enter successful", Color.green);
             Debug.Log("Login successful");
 
-            loginFrame.style.display = DisplayStyle.None; // if login successful hide the login frame
+            loginFrame.style.display = DisplayStyle.None; // Hide the login frame
+            welcomeScreen.style.display = DisplayStyle.Flex; // Show the welcome screen
         }
     }
 
