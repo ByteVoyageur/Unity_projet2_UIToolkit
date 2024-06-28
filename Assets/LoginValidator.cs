@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UIElements;
-using System.Net.Mail;  // Import the namespace for email format
+using System.Net.Mail;
 
 public class LoginValidator : MonoBehaviour
 {
@@ -9,6 +9,7 @@ public class LoginValidator : MonoBehaviour
     private Label emailErrorMessage;
     private Label passwordErrorMessage;
     private const string placeholderText = "Enter text...";  // Set placeholder text
+    private VisualElement loginFrame; // use this to dispear the frame login after login successful
 
     void Awake()
     {
@@ -36,6 +37,8 @@ public class LoginValidator : MonoBehaviour
         emailField.RegisterCallback<BlurEvent>(OnEmailFieldBlur);
         passwordField.RegisterCallback<FocusInEvent>(OnPasswordFieldFocus);
         passwordField.RegisterCallback<BlurEvent>(OnPasswordFieldBlur);
+
+        loginFrame = root.Q<VisualElement>("frameLogin");
     }
 
     private void OnEmailFieldFocus(FocusInEvent evt)
@@ -105,6 +108,8 @@ public class LoginValidator : MonoBehaviour
             ShowErrorMessage(emailErrorMessage, "Enter successful", Color.green);
             ShowErrorMessage(passwordErrorMessage, "Enter successful", Color.green);
             Debug.Log("Login successful");
+
+            loginFrame.style.display = DisplayStyle.None; // if login successful hide the login frame
         }
     }
 

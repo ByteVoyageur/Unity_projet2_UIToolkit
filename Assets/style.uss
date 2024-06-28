@@ -62,6 +62,10 @@
     left: 53%;
     width: 28%;
     height: 7%;
+    transition-property: all, ignored, ignored;
+    transition-duration: 0s, 0s, 0s;
+    transition-timing-function: ease, ease, ease;
+    transition-delay: 0s, 0s, 0s;
 }
 
 .bottomRight {
@@ -245,3 +249,6 @@
     border-top-color: rgba(186, 125, 32, 0);
     border-bottom-color: rgba(186, 125, 32, 0);
 }
+
+
+
