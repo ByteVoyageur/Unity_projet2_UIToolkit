@@ -1,7 +1,3 @@
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
-
 using UnityEngine;
 using UnityEngine.UIElements;
 using System.Net.Mail;
@@ -14,7 +10,8 @@ public class LoginValidator : MonoBehaviour
     private Label passwordErrorMessage;
     private const string placeholderText = "Enter text...";  // Set placeholder text
     private VisualElement loginFrame; // use this to disappear the frame login after login successful
-    private VisualElement welcomeScreen; // use this to show the welcome screen after login successful
+
+    private PostLoginManager postLoginManager;
 
     void Awake()
     {
@@ -44,7 +41,10 @@ public class LoginValidator : MonoBehaviour
         passwordField.RegisterCallback<BlurEvent>(OnPasswordFieldBlur);
 
         loginFrame = root.Q<VisualElement>("frameLogin");
-        welcomeScreen = root.Q<VisualElement>("welcomeScreen"); // Initialize the welcome screen
+
+        // Initialize the PostLoginManager
+        postLoginManager = gameObject.AddComponent<PostLoginManager>();
+        postLoginManager.Initialize(root);
     }
 
     private void OnEmailFieldFocus(FocusInEvent evt)
@@ -116,7 +116,7 @@ public class LoginValidator : MonoBehaviour
             Debug.Log("Login successful");
 
             loginFrame.style.display = DisplayStyle.None; // Hide the login frame
-            welcomeScreen.style.display = DisplayStyle.Flex; // Show the welcome screen
+            postLoginManager.ShowWelcomeScreen(); // Show the welcome screen
         }
     }
 
