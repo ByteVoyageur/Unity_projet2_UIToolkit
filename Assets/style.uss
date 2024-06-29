@@ -1,15 +1,34 @@
 .background {
-    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/BackGround.png?fileID=2800000&guid=b464ee8350ce3984aa31ea54d12d9236&type=3#BackGround");
+    position: absolute;
     width: 100%;
     height: 100%;
+    flex-grow: 1;
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/BackGround.png?fileID=21300000&guid=b464ee8350ce3984aa31ea54d12d9236&type=3#BackGround");
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.frameLogin {
+    flex-grow: 1;
+    max-width: 1185px;
+    max-height: 1709px;
+    min-width: 726px;
+    min-height: 1033px;
+    width: 94%;
+    height: 64%;
+    margin-top: 0;
+    margin-bottom: 5%;
     position: absolute;
+    display: flex;
 }
 
 .border {
     background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Frames_3.png?fileID=113947384412704010&guid=c3cbd015370c5294385a8d880c234850&type=3#Steampunk_UI_Frames_3_4");
-    width: 100%;
-    height: 100%;
-    position: relative;
+    width: 105%;
+    height: 120%;
+    position: absolute;
+    left: 0;
 }
 
 .topLeft {
@@ -17,12 +36,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 35%;
-    height: auto;
-    min-height: 150px;
-    max-height: 250px;
-    min-width: 250px;
-    max-width: 300px;
+    width: 44%;
+    height: 21%;
 }
 
 .topRight {
@@ -30,59 +45,254 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 35%;
-    height: auto;
-    min-height: 150px;
-    max-height: 250px;
-    min-width: 250px;
-    max-width: 300px;
+    width: 44%;
+    height: 21%;
 }
 
 .bottomLeft {
     background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Frames_3.png?fileID=4864721600614679434&guid=c3cbd015370c5294385a8d880c234850&type=3#Steampunk_UI_Frames_3_7");
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 10%;
-    height: auto;
-    min-height: 237px;
-    max-height: 200px;
-    min-width: 237px;
-    max-width: 346px;
+    bottom: 3%;
+    left: 2%;
+    width: 34%;
+    height: 25%;
 }
 
 .bottomMiddle {
     background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Alternative_Colors_4.png?fileID=-8831441479830076655&guid=fc2c96f1421fbe54e82922ae89afef74&type=3#Steampunk_UI_Alternative_Colors_4_6");
     position: absolute;
     bottom: 7%;
-    left: 50%;
-    width: 8%;
-    min-width: 150px;
-    max-width: 150px;
-    min-height: 50px;
+    left: 53%;
+    width: 28%;
+    height: 7%;
+    transition-property: all, ignored, ignored;
+    transition-duration: 0s, 0s, 0s;
+    transition-timing-function: ease, ease, ease;
+    transition-delay: 0s, 0s, 0s;
 }
 
 .bottomRight {
-    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Buttons_1.png?fileID=-4374215236208778123&guid=9291b39306d4ce640bf255c16c6ddf5b&type=3#Steampunk_UI_Buttons_1_15");
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Alternative_Colors_4.png?fileID=-8831441479830076655&guid=fc2c96f1421fbe54e82922ae89afef74&type=3#Steampunk_UI_Alternative_Colors_4_6");
     position: absolute;
-    width: 5%;
+    bottom: 11%;
+    right: 0;
+    width: 18%;
+    height: 5%;
+    rotate: -49deg;
+    left: 79%;
 }
 
 .emailTitle {
-    top: auto;
-    position: absolute;
-    right: auto;
+    font-size: 432%;
+    -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/Arvo/Arvo.ttf?fileID=12800000&guid=e5c356a4b721b024daa3ce4df25a2a24&type=3#Arvo");
+    color: rgb(176, 103, 23);
     -unity-text-align: upper-center;
-    margin-top: 25%;
-    margin-left: 10%;
-    justify-content: center;
-    align-self: center;
-    -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/BebasNeue/BebasNeue.ttf?fileID=12800000&guid=843d03ef8be16da4d96629804d86d7f3&type=3#BebasNeue");
+    width: 98%;
+    height: 10%;
+    top: 16%;
+    position: relative;
+    -unity-font-definition: initial;
+    right: 0;
+    bottom: 30%;
+    left: 15px;
     -unity-font-style: bold;
 }
 
-.unity-text-element {
+.emailBorder {
+    width: 80%;
+    height: 10%;
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Slots_Arrows.png?fileID=-4972393294115483615&guid=4d6d3e529a32a4141bbac8264745777d&type=3#Steampunk_UI_Slots_Arrows_8");
+    left: 10%;
+    top: 15%;
+    background-color: rgba(186, 125, 32, 0.31);
+    -unity-font-definition: initial;
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+    border-bottom-left-radius: 23px;
 }
 
-.unity-label {
+.emailInput {
+    -unity-background-image-tint-color: rgb(6, 6, 6);
+    background-color: rgba(186, 125, 32, 0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 3%;
+    top: 0;
+    -unity-font-definition: initial;
+    -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/Arvo/Arvo.ttf?fileID=12800000&guid=e5c356a4b721b024daa3ce4df25a2a24&type=3#Arvo");
+    -unity-font-style: italic;
+    background-image: none;
+    font-size: 320%;
+    color: rgb(188, 174, 174);
+    display: flex;
+}
+
+.InfoHintEmail {
+    font-size: 332%;
+    margin-bottom: 1%;
+    margin-top: 0;
+    display: none;
+    width: 80%;
+    height: 5%;
+    position: absolute;
+    bottom: auto;
+    top: 35%;
+    left: 11%;
+    color: rgb(239, 234, 234);
+    -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/Arvo/Arvo.ttf?fileID=12800000&guid=e5c356a4b721b024daa3ce4df25a2a24&type=3#Arvo");
+    -unity-font-definition: initial;
+}
+
+.passwordTitle {
+    font-size: 459%;
+    -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/Arvo/Arvo.ttf?fileID=12800000&guid=e5c356a4b721b024daa3ce4df25a2a24&type=3#Arvo");
+    color: rgb(189, 110, 23);
+    -unity-text-align: upper-center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 21%;
+    left: 0;
+    -unity-font-style: bold;
+    max-width: none;
+    max-height: none;
+    min-width: auto;
+    min-height: auto;
+    -unity-font-definition: initial;
+}
+
+.passwordBorder {
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Slots_Arrows.png?fileID=-4972393294115483615&guid=4d6d3e529a32a4141bbac8264745777d&type=3#Steampunk_UI_Slots_Arrows_8");
+    width: 80%;
+    height: 10%;
+    position: absolute;
+    top: 49%;
+    left: 11%;
+    background-color: rgba(186, 125, 32, 0.31);
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+    border-bottom-left-radius: 23px;
+    -unity-slice-left: 0;
+    -unity-font-style: bold-and-italic;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.passwordInput {
+    background-color: rgba(186, 125, 32, 0);
+    border-left-color: rgba(186, 125, 32, 0);
+    border-right-color: rgba(186, 125, 32, 0);
+    border-top-color: rgba(186, 125, 32, 0);
+    border-bottom-color: rgba(186, 125, 32, 0);
+}
+
+.infoHintPassword {
+    font-size: 332%;
+    margin-bottom: 1%;
+    margin-top: 0;
+    display: none;
+    width: 80%;
+    height: 5%;
+    position: absolute;
+    bottom: auto;
+    top: 59%;
+    left: 11%;
+    color: rgb(239, 234, 234);
+    -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/Arvo/Arvo.ttf?fileID=12800000&guid=e5c356a4b721b024daa3ce4df25a2a24&type=3#Arvo");
+    -unity-font-definition: initial;
+}
+
+.buttonSubmit {
+    position: absolute;
+    left: 44%;
+    bottom: 22%;
+    width: 40%;
+    height: 11%;
+    font-size: 410%;
+    color: rgb(221, 147, 35);
+    background-image: url("project://database/Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Alternative_Colors_3.png?fileID=-3566595149302162515&guid=0bfe7a2d4a8de314bbf0f670d78a6cd2&type=3#Steampunk_UI_Alternative_Colors_3_2");
+    margin-top: 0;
+    padding-top: 4px;
+    display: flex;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0.05);
+    border-right-color: rgba(0, 0, 0, 0.05);
+    border-top-color: rgba(0, 0, 0, 0.05);
+    border-bottom-color: rgba(0, 0, 0, 0.05);
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    -unity-font-definition: initial;
+    -unity-font: url("project://database/Assets/Gentleland/SteampunkUI/Fonts/Arvo/Arvo.ttf?fileID=12800000&guid=e5c356a4b721b024daa3ce4df25a2a24&type=3#Arvo");
+}
+
+.emailInput > .unity-base-field__input {
+    background-color: rgba(186, 125, 32, 0);
+    border-left-color: rgba(186, 125, 32, 0);
+    border-right-color: rgba(186, 125, 32, 0);
+    border-top-color: rgba(186, 125, 32, 0);
+    border-bottom-color: rgba(186, 125, 32, 0);
+    width: 100%;
+    height: 100%;
+    font-size: 95%;
+}
+
+.passwordInput > .unity-base-field__input {
+    background-color: rgba(186, 125, 32, 0);
+    border-left-color: rgba(186, 125, 32, 0);
+    border-right-color: rgba(186, 125, 32, 0);
+    border-top-color: rgba(186, 125, 32, 0);
+    border-bottom-color: rgba(186, 125, 32, 0);
+}
+
+.welcomeScreen {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    display: none;
+}
+
+.welcomeMessage {
+    width: 100%;
+    height: 10%;
+    color: rgb(55, 215, 62);
+    position: absolute;
+    top: 9%;
+    right: 0;
+    left: 0;
+    font-size: 60px;
+    -unity-text-align: upper-center;
+}
+
+.joinRoom {
+    top: 23%;
+    width: 30%;
+    left: 33%;
+    height: 6%;
+    font-size: 40px;
+    -unity-font-style: bold;
+}
+
+.listView {
+    width: 60%;
+    height: 50%;
+    top: 27%;
+    left: 32%;
+    display: flex;
+}
+
+.listViewItem {
+    color: white;
+    padding: 5px;
+    margin: 2px 0;
+    font-size: 50px;
 }

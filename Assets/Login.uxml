@@ -1,13 +1,32 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/style.uss?fileID=7433441132597879392&amp;guid=2267f8cebd6532a4f87d7436c9632e45&amp;type=3#style" />
-    <ui:VisualElement name="background" class="background" style="flex-grow: 1;">
-        <ui:VisualElement name="border" class="border" style="flex-grow: 1;">
-            <ui:VisualElement name="topLeft" class="topLeft" style="flex-grow: 1;" />
-            <ui:VisualElement name="bottomLeft" class="bottomLeft" style="flex-grow: 1;" />
-            <ui:VisualElement name="topRight" class="topRight" style="flex-grow: 1;" />
-            <ui:VisualElement name="bottomMiddle" class="bottomMiddle" style="flex-grow: 1;" />
-            <ui:VisualElement name="bottomRight" class="bottomRight" style="flex-grow: 1;" />
+    <ui:VisualElement name="background" class="background" style="align-self: auto;">
+        <ui:VisualElement name="frameLogin" class="frameLogin">
+            <ui:VisualElement name="border" class="border">
+                <ui:VisualElement name="topLeft" class="topLeft" />
+                <ui:VisualElement name="bottomLeft" class="bottomLeft" />
+                <ui:VisualElement name="topRight" class="topRight" />
+                <ui:VisualElement name="bottomMiddle" class="bottomMiddle" />
+                <ui:VisualElement name="bottomRight" class="bottomRight" />
+                <ui:VisualElement name="inputContainer" style="flex-grow: 1;">
+                    <ui:Label name="emailTitle" text="EMAIL" class="emailTitle" />
+                    <ui:VisualElement name="emailBorder" class="emailBorder">
+                        <ui:TextField picking-mode="Ignore" value="Enter text..." name="emailInput" class="emailInput" />
+                    </ui:VisualElement>
+                    <ui:Label name="InfoHintEmail" text="This is a hint for email" class="InfoHintEmail" />
+                    <ui:Label name="passwordTitle" text="PASSWORD" class="passwordTitle" style="-unity-font-definition: initial;" />
+                    <ui:VisualElement name="passwordBorder" class="passwordBorder" style="flex-grow: 1;">
+                        <ui:TextField picking-mode="Ignore" value="Enter text..." name="passwordInput" class="emailInput passwordInput" />
+                    </ui:VisualElement>
+                    <ui:Label name="infoHintPassword" text="This is a hint For password" class="infoHintPassword" />
+                    <ui:Button text="LOGIN" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buttonSubmit" class="buttonSubmit" />
+                </ui:VisualElement>
+            </ui:VisualElement>
         </ui:VisualElement>
-        <ui:Label tabindex="-1" text="EMAIL" parse-escape-sequences="true" display-tooltip-when-elided="true" name="emailTitle" class="emailTitle" style="-unity-text-align: upper-left;" />
+        <ui:VisualElement name="welcomeScreen" class="welcomeScreen">
+            <ui:Label name="welcomeMessage" text="Welcome to the App!" class="welcomeMessage" />
+            <ui:Button text="Join the room" parse-escape-sequences="true" display-tooltip-when-elided="true" name="joinRoom" class="joinRoom" />
+            <ui:ListView name="listView" class="listView" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

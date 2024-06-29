@@ -48,7 +48,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -153,13 +153,13 @@ TextureImporter:
       name: Steampunk_UI_Alternative_Colors_3_0
       rect:
         serializedVersion: 2
-        x: 55
+        x: 54
         y: 754
-        width: 302
+        width: 303
         height: 234
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 144, y: 108, z: 138, w: 121}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -174,13 +174,13 @@ TextureImporter:
       name: Steampunk_UI_Alternative_Colors_3_1
       rect:
         serializedVersion: 2
-        x: 423
-        y: 755
-        width: 302
-        height: 234
+        x: 422
+        y: 754
+        width: 303
+        height: 235
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 144, y: 108, z: 138, w: 121}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -195,13 +195,13 @@ TextureImporter:
       name: Steampunk_UI_Alternative_Colors_3_2
       rect:
         serializedVersion: 2
-        x: 805
+        x: 803
         y: 754
-        width: 302
+        width: 303
         height: 234
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 144, y: 108, z: 138, w: 121}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -216,13 +216,13 @@ TextureImporter:
       name: Steampunk_UI_Alternative_Colors_3_3
       rect:
         serializedVersion: 2
-        x: 51
+        x: 50
         y: 444
-        width: 303
+        width: 304
         height: 234
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 50, y: 50, z: 50, w: 50}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -239,11 +239,11 @@ TextureImporter:
         serializedVersion: 2
         x: 437
         y: 450
-        width: 303
-        height: 234
+        width: 305
+        height: 235
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 50, y: 50, z: 50, w: 50}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -258,13 +258,13 @@ TextureImporter:
       name: Steampunk_UI_Alternative_Colors_3_5
       rect:
         serializedVersion: 2
-        x: 835
+        x: 834
         y: 450
-        width: 303
+        width: 304
         height: 234
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 50, y: 50, z: 50, w: 50}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -279,13 +279,13 @@ TextureImporter:
       name: Steampunk_UI_Alternative_Colors_3_6
       rect:
         serializedVersion: 2
-        x: 1188
+        x: 1187
         y: 434
-        width: 715
+        width: 717
         height: 254
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 158, y: 55, z: 158, w: 55}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -305,8 +305,8 @@ TextureImporter:
         width: 715
         height: 254
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 158, y: 55, z: 158, w: 55}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -321,13 +321,13 @@ TextureImporter:
       name: Steampunk_UI_Alternative_Colors_3_8
       rect:
         serializedVersion: 2
-        x: 893
+        x: 892
         y: 52
-        width: 715
+        width: 717
         height: 254
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 158, y: 55, z: 158, w: 55}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
