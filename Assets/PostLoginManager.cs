@@ -2,20 +2,28 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using System.Collections.Generic;
 using Photon.Pun;
+using Photon.Realtime;
 
-public class PostLoginManager : MonoBehaviour
+public class PostLoginManager : MonoBehaviourPunCallbacks
 {
     private VisualElement root;
     private Button joinRoomButton;
     private ListView listView;
+    private Label welcomeMessage;
 
-    private List<int> items = new List<int>();
+    private List<string> items = new List<string>();
 
-    public void Initialize(VisualElement rootElement)
+    private string userEmail;
+
+    public void Initialize(VisualElement rootElement, string email)
     {
         root = rootElement;
         joinRoomButton = root.Q<Button>("joinRoom");
         listView = root.Q<ListView>("listView");
+        welcomeMessage = root.Q<Label>("welcomeMessage");
+
+        userEmail = email;
+        Debug.Log($"PostLoginManager initialized with userEmail: {userEmail}");
 
         InitializeListView();
 
@@ -26,7 +34,6 @@ public class PostLoginManager : MonoBehaviour
 
     private void InitializeListView()
     {
-        
         Debug.Log("Initializing ListView");
 
         listView.makeItem = () =>
@@ -40,7 +47,7 @@ public class PostLoginManager : MonoBehaviour
         listView.bindItem = (element, i) =>
         {
             var label = element as Label;
-            label.text = $"{items[i]} Hello World!";
+            label.text = items[i];
             Debug.Log($"Binding item: {i}");
         };
 
@@ -51,26 +58,42 @@ public class PostLoginManager : MonoBehaviour
     private void JoinRoomClicked()
     {
         Debug.Log("Join room button clicked!");
-        items.Add(items.Count);
+        PhotonNetwork.NickName = userEmail;  // Set the user's email as their nickname
 
-        Debug.Log($"Items count: {items.Count}");
-        for (int i = 0; i < items.Count; i++)
+        if (!PhotonNetwork.IsConnected)
         {
-            Debug.Log($"Item {i}: {items[i]}");
+            Debug.Log("Not connected to Photon. Connecting...");
+            PhotonNetwork.ConnectUsingSettings();
         }
-
-        listView.RefreshItems();
-
-        Debug.Log($"ListView elements children count after RefreshItems: {listView.childCount}");
-        foreach (var child in listView.Children())
+        else
         {
-            Debug.Log($"Child: {child}");
+            JoinRoom();
         }
+    }
+
+    private void JoinRoom()
+    {
+        Debug.Log("Joining room...");
+        PhotonNetwork.JoinRandomOrCreateRoom();
     }
 
     public void ShowWelcomeScreen()
     {
         var welcomeScreen = root.Q<VisualElement>("welcomeScreen");
         welcomeScreen.style.display = DisplayStyle.Flex;
+    }
+
+    public void AddPlayerToList(string playerName)
+    {
+        items.Add(playerName);
+        listView.RefreshItems();
+    }
+
+    public override void OnConnectedToMaster()
+    {
+        base.OnConnectedToMaster();
+        Debug.Log("Connected to Master");
+
+        JoinRoom();
     }
 }

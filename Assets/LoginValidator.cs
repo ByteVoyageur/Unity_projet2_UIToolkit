@@ -9,13 +9,14 @@ public class LoginValidator : MonoBehaviour
     private Label emailErrorMessage;
     private Label passwordErrorMessage;
     private const string placeholderText = "Enter text...";  // Set placeholder text
-    private VisualElement loginFrame; // use this to disappear the frame login after login successful
+    private VisualElement loginFrame; // Use this to hide the login frame after login is successful
 
     private PostLoginManager postLoginManager;
+    private VisualElement root; // Class-level variable for the root element
 
     void Awake()
     {
-        var root = GetComponent<UIDocument>().rootVisualElement;
+        root = GetComponent<UIDocument>().rootVisualElement;
 
         emailField = root.Q<TextField>("emailInput");
         passwordField = root.Q<TextField>("passwordInput");
@@ -44,7 +45,6 @@ public class LoginValidator : MonoBehaviour
 
         // Initialize the PostLoginManager
         postLoginManager = gameObject.AddComponent<PostLoginManager>();
-        postLoginManager.Initialize(root);
     }
 
     private void OnEmailFieldFocus(FocusInEvent evt)
@@ -111,11 +111,13 @@ public class LoginValidator : MonoBehaviour
 
         if (isValid)
         {
-            ShowErrorMessage(emailErrorMessage, "Enter successful", Color.green);
-            ShowErrorMessage(passwordErrorMessage, "Enter successful", Color.green);
+            ShowErrorMessage(emailErrorMessage, "Login successful", Color.green);
+            ShowErrorMessage(passwordErrorMessage, "Login successful", Color.green);
             Debug.Log("Login successful");
 
             loginFrame.style.display = DisplayStyle.None; // Hide the login frame
+            Debug.Log($"Initializing PostLoginManager with email: {emailField.value}");
+            postLoginManager.Initialize(root, emailField.value);
             postLoginManager.ShowWelcomeScreen(); // Show the welcome screen
         }
     }
