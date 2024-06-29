@@ -102,6 +102,24 @@ public class PostLoginManager : MonoBehaviourPunCallbacks
         base.OnJoinedRoom();
         Debug.Log($"Joined room. Player: {PhotonNetwork.NickName}");
 
-        AddPlayerToList(PhotonNetwork.NickName);
+        UpdatePlayerList();
+    }
+
+    public override void OnPlayerEnteredRoom(Player newPlayer)
+    {
+        base.OnPlayerEnteredRoom(newPlayer);
+        Debug.Log($"Player entered room: {newPlayer.NickName}");
+
+        AddPlayerToList(newPlayer.NickName);
+    }
+
+    private void UpdatePlayerList()
+    {
+        items.Clear();
+        foreach (Player player in PhotonNetwork.PlayerList)
+        {
+            items.Add(player.NickName);
+        }
+        listView.RefreshItems();
     }
 }
