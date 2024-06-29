@@ -269,7 +269,7 @@
     top: 9%;
     right: 0;
     left: 0;
-    font-size: 50px;
+    font-size: 60px;
     -unity-text-align: upper-center;
 }
 
@@ -283,10 +283,10 @@
 }
 
 .listView {
-    width: 80%;
+    width: 60%;
     height: 50%;
     top: 27%;
-    left: 11%;
+    left: 32%;
     display: flex;
 }
 
@@ -294,4 +294,5 @@
     color: white;
     padding: 5px;
     margin: 2px 0;
+    font-size: 50px;
 }

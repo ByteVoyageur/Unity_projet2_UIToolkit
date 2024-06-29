@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 using System.Collections.Generic;
+using Photon.Pun;
 
 public class PostLoginManager : MonoBehaviour
 {
@@ -10,38 +11,37 @@ public class PostLoginManager : MonoBehaviour
 
     private List<int> items = new List<int>();
 
-    // 初始化方法
     public void Initialize(VisualElement rootElement)
     {
         root = rootElement;
         joinRoomButton = root.Q<Button>("joinRoom");
         listView = root.Q<ListView>("listView");
 
-        // 初始化 ListView
         InitializeListView();
 
         joinRoomButton.clicked += JoinRoomClicked;
+
+        Debug.Log("PostLoginManager initialized.");
     }
 
     private void InitializeListView()
     {
-        listView.style.display = DisplayStyle.Flex; // 确保 ListView 是显示状态而非隐藏状态
-
-        // Debug 信息
+        
         Debug.Log("Initializing ListView");
 
         listView.makeItem = () =>
         {
             var label = new Label();
+            label.AddToClassList("listViewItem");
             Debug.Log("Creating new ListView item");
-            label.style.color = Color.red; // 设置颜色以便调试观察
             return label;
         };
-        
+
         listView.bindItem = (element, i) =>
         {
-            Debug.Log("Binding item: " + i);
-            (element as Label).text = items[i] + " Hello World!";
+            var label = element as Label;
+            label.text = $"{items[i]} Hello World!";
+            Debug.Log($"Binding item: {i}");
         };
 
         listView.fixedItemHeight = 60;
@@ -53,17 +53,21 @@ public class PostLoginManager : MonoBehaviour
         Debug.Log("Join room button clicked!");
         items.Add(items.Count);
 
-        // 调试信息
         Debug.Log($"Items count: {items.Count}");
-        items.ForEach(item => Debug.Log($"Item: {item}"));
+        for (int i = 0; i < items.Count; i++)
+        {
+            Debug.Log($"Item {i}: {items[i]}");
+        }
 
         listView.RefreshItems();
 
-        // 调试信息: 检查 ListView 的子元素
-        Debug.Log($"ListView elements children count: {listView.childCount}");
+        Debug.Log($"ListView elements children count after RefreshItems: {listView.childCount}");
+        foreach (var child in listView.Children())
+        {
+            Debug.Log($"Child: {child}");
+        }
     }
 
-    // 显示欢迎界面
     public void ShowWelcomeScreen()
     {
         var welcomeScreen = root.Q<VisualElement>("welcomeScreen");
