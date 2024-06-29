@@ -96,4 +96,12 @@ public class PostLoginManager : MonoBehaviourPunCallbacks
 
         JoinRoom();
     }
+
+    public override void OnJoinedRoom()
+    {
+        base.OnJoinedRoom();
+        Debug.Log($"Joined room. Player: {PhotonNetwork.NickName}");
+
+        AddPlayerToList(PhotonNetwork.NickName);
+    }
 }
