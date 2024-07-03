@@ -111,13 +111,11 @@ public class LoginValidator : MonoBehaviour
 
         if (isValid)
         {
-            ShowErrorMessage(emailErrorMessage, "Login successful", Color.green);
-            ShowErrorMessage(passwordErrorMessage, "Login successful", Color.green);
             Debug.Log("Login successful");
 
             loginFrame.style.display = DisplayStyle.None; // Hide the login frame
             Debug.Log($"Initializing PostLoginManager with email: {emailField.value}");
-            postLoginManager.Initialize(root, emailField.value);
+            postLoginManager.Initialize(root, emailField.value); // initial postLoginManager and translate email
             postLoginManager.ShowWelcomeScreen(); // Show the welcome screen
         }
     }

@@ -295,4 +295,5 @@
     padding: 5px;
     margin: 2px 0;
     font-size: 50px;
+    display: none;
 }
